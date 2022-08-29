@@ -1,6 +1,36 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. npx create-react-app tailwind-portfolio
+
+## 2. cd tailwind-portfolio
+
+## Install Tailwind with react "auto prefixer"
+
+## 3. npm install -D tailwindcss postcss autoprefixer
+
+## 4. npx tailwindcss init -p
+
+creates a tailwind config file. "tailwind.config.js"
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+   ## "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+## 5. Configure index.css
+
+# delete all content in index.css and paste the following code.
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 ## Available Scripts
 
