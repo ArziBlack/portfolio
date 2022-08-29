@@ -1,0 +1,1 @@
+mx-auto = margin left-right, align center
