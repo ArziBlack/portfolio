@@ -39,5 +39,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      function updateList() {
+        const titles = [...document.querySelectorAll('h1, h2')].sort((a, b) => {
+          return Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().bottom)
+        });
+
+        document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove('selected-circle'));
+        document.querySelectorAll('.nav-dot')[[...document.querySelectorAll('h1, h2')].indexOf(titles[0])].classList.add("selected-circle");
+      }
+      updateList();
+      window.addEventListener('scroll', () => {
+        updateList();
+      })
+    </script>
   </body>
 </html>
