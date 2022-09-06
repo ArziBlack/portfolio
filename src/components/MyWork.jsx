@@ -5,8 +5,8 @@ const MyWork = () => {
     <div className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24'>
         <section className="w-full">
             <h2 id='work' className='secondary-title'>My Work</h2>
-            <p>I've Had the pleasure of working with multiple Fortune 500 campaign and <br />
-              implementing both frontend and backend
+            <p>I've Had the pleasure of working on different projects where i<br />
+              implemented the frontend development technologies with Javascript and React.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
               <img src="/Img/work/figma.jpg" alt="figma" />
