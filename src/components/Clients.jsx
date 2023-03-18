@@ -24,7 +24,7 @@ const Clients = () => {
                 </div>
                 <div className="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
                     <div className="mb-6 lg:mb-0">
-                        <FaAmazon size='4rem'/>
+                        <img src='/Img/logo.png' className='w-18 p-3 bg-secondary rounded-md'/>
                     </div>
                     <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
                         <h3 className='text-white text-3xl font-semibold'>Fudlist, Bayelsa State.</h3>
@@ -39,7 +39,23 @@ const Clients = () => {
                 </div>
                 <div className="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
                     <div className="mb-6 lg:mb-0">
-                        <FaAmazon size='4rem'/>
+                        <img src='/Img/tensfer.png' className='w-22'/>
+                    </div>
+                    <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 className='text-white text-3xl font-semibold'>Tensfer, Bayelsa State.</h3>
+                        <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                            <div className="badge">React.js Developer</div>
+                            <div className='badge'>Front End Web Development</div>
+                            <div className='badge'>Redux Toolkit</div>
+                            <div className='badge'>Postman</div>
+                            <div className='badge'>Chakra UI</div>
+                        </div>
+                        <p>I am currently working with Tensfer (Cryptocurrency exchange) Bayelsa State</p>
+                    </div>
+                </div>
+                <div className="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                    <div className="mb-6 lg:mb-0">
+                        <FaGoogle size='4rem'/>
                     </div>
                     <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
                         <h3 className='text-white text-3xl font-semibold'>Google Solution, Inc</h3>

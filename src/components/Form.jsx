@@ -25,7 +25,7 @@ function Form() {
                     <div className="space-y-12">
                         <div>
                             <label htmlFor="" className=' text-white block mb-6 text-xl font-bold'>Name</label>
-                            <input type="text" className="w-full border border-input-border bg-input px-4 py-4" name="email" onChange={handleChange} value={form.name} />
+                            <input type="text" className="w-full border border-input-border bg-input px-4 py-4" name="name" onChange={handleChange} value={form.name} />
                         </div>
                         <div>
                             <label htmlFor="" className='text-white block mb-6 text-xl font-bold'>Email</label>
