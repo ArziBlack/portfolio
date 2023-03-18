@@ -6,7 +6,7 @@ const Clients = () => {
     <div className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'>
         <section className='w-full'>
             <h2 id="clients" className="secondary-title">Clients</h2>
-            <p className='section-paragraph'>i've had the pleasure of working with multiple fortune 500 company</p>
+            <p className='section-paragraph'>i've had the pleasure of working with multiple Tech Companies in the past Years.</p>
 
             <div className='space-y-12 my-16'>
                 <div className="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
@@ -14,7 +14,7 @@ const Clients = () => {
                         <FaAmazon size='4rem'/>
                     </div>
                     <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                        <h3 className='text-white text-3xl font-semibold'>Google, Inc</h3>
+                        <h3 className='text-white text-3xl font-semibold'>Tech Hub, Bayelsa State.</h3>
                         <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
                             <div className="badge">React.js Developer</div>
                             <div className='badge'>Front End Web Development</div>
@@ -27,13 +27,32 @@ const Clients = () => {
                         <FaAmazon size='4rem'/>
                     </div>
                     <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                        <h3 className='text-white text-3xl font-semibold'>Google, Inc</h3>
+                        <h3 className='text-white text-3xl font-semibold'>Fudlist, Bayelsa State.</h3>
                         <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-                            <div className="badge">ui/ux</div>
+                            <div className="badge">React.js Developer</div>
                             <div className='badge'>Front End Web Development</div>
-                            <div className="badge">React.js</div>
+                            <div className='badge'>Redux Toolkit</div>
+                            <div className='badge'>Postman</div>
                         </div>
-                        <p>I've had pleasure working on Upwork</p>
+                        <p>I've had pleasure working with Fudlist (Online Resturant) Bayelsa State</p>
+                    </div>
+                </div>
+                <div className="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                    <div className="mb-6 lg:mb-0">
+                        <FaAmazon size='4rem'/>
+                    </div>
+                    <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 className='text-white text-3xl font-semibold'>Google Solution, Inc</h3>
+                        <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                            <div className="badge">UI/UX</div>
+                            <div className='badge'>Front End Web Development</div>
+                            <div className='badge'>Backend End Web Development</div>
+                            <div className="badge">React.js</div>
+                            <div className="badge">Next.js</div>
+                            <div className="badge">Express.js</div>
+                            <div className="badge">TailwindCss</div>
+                        </div>
+                        <p>I've had pleasure working on the Google Solution Challange (Waste Management Solution) as the Assistant Lead</p>
                     </div>
                 </div>
             </div>

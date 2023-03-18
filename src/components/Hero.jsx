@@ -11,7 +11,7 @@ const Hero = () => {
         document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove('selected-circle'));
         document.querySelectorAll('.nav-dot')[[...document.querySelectorAll('h1, h2')].indexOf(titles[0])].classList.add("selected-circle");
       }
-      updateList();
+    //   updateList();
       window.addEventListener('scroll', () => {
         updateList();
       })
@@ -35,7 +35,7 @@ const Hero = () => {
                     </div>
                 </nav>
                 <div className="flex flex-wrap lg:ml-20 justify-start max-w-xl mt-0 md:my-36">
-                    <h1 className='font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left'>Building <br /> Beautiful Web Experiences.</h1>
+                    <h1 className='font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left'>Building <br /> Beautiful Web and <br/> Mobile Experiences.</h1>
                     <div className='w-full flex justify-center md:justify-start'>
                         <button className='px-8 py-4 bg-theme text-white font-bold flex mt-12 items-center space-x-3'>
                             <div>

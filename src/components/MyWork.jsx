@@ -6,7 +6,7 @@ const MyWork = () => {
         <section className="w-full">
             <h2 id='work' className='secondary-title'>My Work</h2>
             <p>I've Had the pleasure of working on different projects where i<br />
-              implemented the frontend development technologies with Javascript and React.
+              implemented the frontend development technologies with Javascript, React.js, React Native, Next.js, Redux Toolkit, Postman, Tailwindcss, Express.js, Firebase, PostGreSql and MongoDB.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
               <img src="/Img/work/figma.jpg" alt="figma" />
