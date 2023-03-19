@@ -49,6 +49,7 @@ const Clients = () => {
                             <div className='badge'>Redux Toolkit</div>
                             <div className='badge'>Postman</div>
                             <div className='badge'>Chakra UI</div>
+                            <div className='badge'>TailwindCSS</div>
                         </div>
                         <p>I am currently working with Tensfer (Cryptocurrency exchange) Bayelsa State</p>
                     </div>
