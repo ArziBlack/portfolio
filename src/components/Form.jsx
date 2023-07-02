@@ -14,6 +14,9 @@ function Form() {
             [e.target.name]: e.target.value
         })
     }
+    function sendEmail(){
+        alert(`Email sent to ${form.email} from ${form.name}`)
+    }
     log(form);
     return (
         <div className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'>
@@ -29,18 +32,18 @@ function Form() {
                         </div>
                         <div>
                             <label htmlFor="" className='text-white block mb-6 text-xl font-bold'>Email</label>
-                            <input type="email" className="text-white block mb-6 text-xl font-bold w-full border bg-input border-input-border" name="email" onChange={handleChange} value={form.email}/>
+                            <input type="email" className="text-white block mb-6 text-xl font-bold w-full border bg-input border-input-border px-4 py-1" name="email" onChange={handleChange} value={form.email}/>
                         </div>
                         <div>
                             <label htmlFor="" className='text-white block mb-6 text-xl font-bold'>Message</label>
-                            <textarea type='email' name="message" id="" cols="30" rows="10" className="w-full border border-input-border bg-input" onChange={handleChange} value={form.message}></textarea>
+                            <textarea type='email' name="message" id="" cols="30" rows="10" className="w-full border border-input-border bg-input px-4 py-1" onChange={handleChange} value={form.message}></textarea>
                         </div>
-                        <button className='px-6 py-2 bg-theme text-white font-bold'>Send It!</button>
+                        <button className='px-6 py-2 bg-theme text-white font-bold' onClick={sendEmail}>Send It!</button>
                     </div>
 
                     <div className="mt-12">
                         <p className="text-secondary">+234 90 3728 9192</p>
-                        <a href="mailto:arziblack@gmail.com" className='text-secondary underline mt-8'>arziblack2@gmail.com</a>
+                        <a href="mailto:arziblack@gmail.com" className='text-secondary underline mt-8 mr-5'>arziblack2@gmail.com</a>
                         <a href="mailto:arziblack@gmail.com" className='text-secondary underline mt-8'>eghoiazibapu@gmail.com</a>
                         <div className="flex mt-20 space-x-6">
                             <a href="https://github.com/MiltonBlack">

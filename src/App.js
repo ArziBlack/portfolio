@@ -4,6 +4,7 @@ import Form from './components/Form';
 import Hero from './components/Hero';
 import MyWork from './components/MyWork';
 import Navbar from './components/Navbar';
+import WorkFlow from './components/WorkFlow';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <MyWork/>
+      <WorkFlow/>
       <Clients/>
       <Form/>
     </>
