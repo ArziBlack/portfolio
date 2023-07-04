@@ -16,7 +16,7 @@ const Hero = () => {
         updateList();
       })
     return (
-        <div className='container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'>
+        <div className='container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full overflow-hidden'>
             <div className="flex flex-wrap md:flex-nowrap">
                 <nav className='inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block'>
                     <div className="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">

@@ -53,3 +53,11 @@ body {
 .h-screen-partial {
     height: 80vh;
 }
+.imgs{
+    transition: background 200ms;
+}
+.imgs:hover {
+    @apply relative;
+}
+.flow{
+}
