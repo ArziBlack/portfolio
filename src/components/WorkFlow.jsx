@@ -9,23 +9,23 @@ const WorkFlow = () => {
                 <p className='section-paragraph'>The Stages involved in our Work Flow Processes.</p>
                 <div className=' flex items-center justify-center flex-wrap'>
                     <div className='m-3 flex items-center justify-center h-60 w-60 rounded-full border border-theme'>
-                        <p>Step One</p>
+                        <p className='text-center'>Strategy and Planning / Information Gathering</p>
                     </div>
                     <FaArrowRight/>
                     <div className='m-3 flex items-center justify-center h-60 w-60 rounded-full border border-theme'>
-                        <p>Step Two</p>
+                        <p>Product Design (UI/UX)</p>
                     </div>
                     <FaArrowRight/>
                     <div className='m-3 flex items-center justify-center h-60 w-60 rounded-full border border-theme'>
-                        <p>Step Three</p>
+                        <p className='text-center'>Website / Application Development</p>
                     </div>
                     <FaArrowRight/>
                     <div className='m-3 flex items-center justify-center h-60 w-60 rounded-full border border-theme'>
-                        <p>Step Four</p>
+                        <p>Testing and Deployment</p>
                     </div>
                     <FaArrowRight/>
                     <div className='m-3 flex items-center justify-center h-60 w-60 rounded-full border border-theme'>
-                        <p>Step Five</p>
+                        <p>Support and Maintenance</p>
                     </div>
                 </div>
             </section>

@@ -17,7 +17,7 @@ const MyWork = () => {
           {
             ImageData.map((data, idx)=> {
               return (
-                <Images image={data.image} about={data.about} key={idx}/>
+                <Images image={data.image} about={data.about} head={data.head} key={idx}/>
                 )
             })
           }
