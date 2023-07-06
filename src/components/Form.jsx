@@ -15,7 +15,7 @@ function Form() {
         })
     }
     function sendEmail(){
-        alert(`Email sent to ${form.email} from ${form.name}`)
+        // alert(`Email sent to ${form.email} from ${form.name}`)
     }
     log(form);
     return (
@@ -43,8 +43,8 @@ function Form() {
 
                     <div className="mt-12">
                         <p className="text-secondary">+234 90 3728 9192</p>
-                        <a href="mailto:arziblack@gmail.com" className='text-secondary underline mt-8 mr-5'>arziblack2@gmail.com</a>
-                        <a href="mailto:arziblack@gmail.com" className='text-secondary underline mt-8'>eghoiazibapu@gmail.com</a>
+                        <a href="mailto:arziblack@gmail.comsubject='Appointment with a client'&body='Hello, Please kindly schedule an appointment with us shortly, ive got work for you" className='text-secondary underline mt-8 mr-5'>arziblack2@gmail.com</a>
+                        <a href="mailto:eghoiazibapu@gmail.com?subject='Appointment with a client'&body='Hello, Please kindly schedule an appointment with us shortly, ive got work for you'" className='text-secondary underline mt-8'>eghoiazibapu@gmail.com</a>
                         <div className="flex mt-20 space-x-6">
                             <a href="https://github.com/MiltonBlack">
                                 <FaGithub size='3rem' />
