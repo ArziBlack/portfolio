@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion';
 import { FaTwitter, FaGithub } from 'react-icons/fa'
 
 function Form() {
@@ -20,7 +21,7 @@ function Form() {
     log(form);
     return (
         <div className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'>
-            <section className="w-full">
+            <motion.section className="w-full" initial={{opacity:0, x:200}} whileInView={{opacity:1, x:0}} transition={{duration:0.7}} viewport={{once:false}}>
                 <h2 id='hire' className='secondary-title'>Hire Me</h2>
                 <p className='section-paragraph'>Feel free to contact me any time, through any of the contact Links!</p>
 
@@ -49,13 +50,13 @@ function Form() {
                             <a href="https://github.com/MiltonBlack">
                                 <FaGithub size='3rem' />
                             </a>
-                            <a href="#">
+                            <a href="https://twitter.com/@Miltonblack13">
                                 <FaTwitter size='3rem' />
                             </a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
         </div>
     )
 }

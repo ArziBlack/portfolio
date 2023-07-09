@@ -1,10 +1,11 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { FaGoogle, FaAmazon, FaCoins, FaViacoin } from 'react-icons/fa'
 
 const Clients = () => {
   return (
     <div className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'>
-        <section className='w-full'>
+        <motion.section className='w-full' initial={{ x:-200}} whileInView={{ x:0}} transition={{duration:1}} viewport={{once:false}}>
             <h2 id="clients" className="secondary-title">Clients</h2>
             <p className='section-paragraph'>i've had the pleasure of working with multiple Tech Companies in the past Years.</p>
 
@@ -94,7 +95,7 @@ const Clients = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     </div>
   )
 }
