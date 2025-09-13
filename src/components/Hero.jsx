@@ -1,6 +1,8 @@
 import React from 'react';
 import {motion} from 'framer-motion'
 import { FaEye } from 'react-icons/fa'
+import { TextReveal, FadeInUp, FadeInLeft } from './ScrollAnimations'
+import ModernButton from './ModernButton'
 
 const Hero = () => {
 
@@ -43,17 +45,33 @@ const Hero = () => {
                     </motion.div>
                 </nav>
                 <div className="flex flex-wrap lg:ml-20 justify-start max-w-xl mt-0 md:my-36">
-                    <h1 className='font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left'>Building <br /> Beautiful Web and Mobile Experiences.</h1>
-                    <div className='w-full flex justify-center md:justify-start'>
-                        <button className='px-8 py-4 bg-theme text-white font-bold flex mt-12 items-center space-x-3'>
-                            <div>
-                                <FaEye height='22px' width='22px'/>
-                            </div>
-                            <span>My Work</span>
-                        </button>
-                    </div>
+                    <TextReveal className='font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left gradient-text'>
+                        <span>Building</span><br /> 
+                        <span>Beautiful Web and Mobile</span><br />
+                        <span className="text-theme">Experiences.</span>
+                    </TextReveal>
+                    <FadeInUp delay={0.3} className='w-full flex justify-center md:justify-start'>
+                        <ModernButton 
+                            variant="primary" 
+                            size="large"
+                            icon={<FaEye />}
+                            className='mt-12 hover-lift'
+                            magneticStrength={0.5}
+                            onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
+                        >
+                            My Work
+                        </ModernButton>
+                    </FadeInUp>
                 </div>
-                <img src="/Img/usher.jpeg" alt="usher" className='w-3/4 mt-12 md:absolute -mt-6 md:mt-0 right-0 -z-1' />
+                <FadeInLeft delay={0.5} className="w-3/4 mt-12 md:absolute -mt-6 md:mt-0 right-0 -z-1">
+                    <motion.img 
+                        src="/Img/usher.jpg" 
+                        alt="usher" 
+                        className='w-full floating hover-lift cursor-image' 
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.3 }}
+                    />
+                </FadeInLeft>
             </div>
         </div>
     )
