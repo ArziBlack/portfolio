@@ -8,7 +8,7 @@ const MyWork = () => {
         <h2 id="my-work" className="secondary-title">My Work</h2>
         <p className='section-paragraph'>Here are some of my recent projects.</p>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-16'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-5'>
           {myWorkData.map((work) => (
             <Card
               key={work.id}
