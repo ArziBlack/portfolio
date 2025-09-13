@@ -1,7 +1,3 @@
-import React from 'react';
-import one from "../assets/one.jpg"
-import two from "../assets/two.jpg"
-
 interface WorkData {
   id: string;
   imageSrc: string;
@@ -12,45 +8,51 @@ interface WorkData {
 
 export const myWorkData: WorkData[] = [
   {
-    id: '1',
+    id: "1",
     imageSrc: "/Img/fudlist.png", // Placeholder image
-    title: 'FudList',
-    description: 'A cutting-edge web application built with React and Node.js.',
-    badges: ['React', 'Node.js', 'MongoDB', 'Express'],
+    title: "FudList",
+    description:
+      "Worked on the admin dashboard for Fudlist food vendor website, translated figma design to react js code, integrated APIs and used Redux state management. ",
+    badges: ["React", "Node.js", "MongoDB", "Express"],
   },
   {
-    id: '2',
+    id: "2",
     imageSrc: "/Img/tens.png", // Placeholder image
-    title: 'Tensfer',
-    description: 'An intuitive mobile application developed using React Native.',
-    badges: ['React Native', 'Firebase', 'Redux'],
+    title: "Tensfer",
+    description:
+      "Developed the Dashboard of the Crypto exchange startup and worked remotely with team members, also made the dashboard mobile friendly. ",
+    badges: ["React Native", "Firebase", "Redux"],
   },
   {
-    id: '3',
+    id: "3",
     imageSrc: "/Img/commune.png", // Placeholder image
-    title: 'Commune',
-    description: 'A scalable e-commerce solution with a focus on user experience.',
-    badges: ['Next.js', 'Stripe', 'TypeScript', 'TailwindCSS'],
+    title: "Commune",
+    description:
+      "Fixed crashing application, implemented voice and video calls using Agora SDK and implemented OTP SMS Verification using Twilo. ",
+    badges: ["Next.js", "Stripe", "TypeScript", "TailwindCSS"],
   },
   {
-    id: '4',
+    id: "4",
     imageSrc: "/Img/fanful.jpg", // Placeholder image
-    title: 'Fanful',
-    description: 'A scalable e-commerce solution with a focus on user experience.',
-    badges: ['Next.js', 'Stripe', 'TypeScript', 'TailwindCSS'],
+    title: "Fanful",
+    description:
+      "Worked on Creating different controllers with endpoints on different routes for managing the admin operations, also worked on an SDK used in the app and dashboard. ",
+    badges: ["Next.js", "Stripe", "TypeScript", "TailwindCSS"],
   },
   {
-    id: '5',
+    id: "5",
     imageSrc: "/Img/feasibility.png", // Placeholder image
-    title: 'Feasibility Giant',
-    description: 'A scalable e-commerce solution with a focus on user experience.',
-    badges: ['Next.js', 'Stripe', 'TypeScript', 'TailwindCSS'],
+    title: "Feasibility Giant",
+    description:
+      "A scalable e-commerce solution with a focus on user experience.",
+    badges: ["Next.js", "Stripe", "TypeScript", "TailwindCSS"],
   },
   {
-    id: '6',
+    id: "6",
     imageSrc: "/Img/chapta.jpeg", // Placeholder image
-    title: 'Chapta',
-    description: 'A scalable e-commerce solution with a focus on user experience.',
-    badges: ['Next.js', 'Stripe', 'TypeScript', 'TailwindCSS'],
+    title: "Chapta",
+    description:
+      " Chapta is an edtech startup helping low-to-mid tier African schools digitize operations using simple, familiar tools like Google Sheets, WhatsApp, SMS, and AI.",
+    badges: ["Next.js", "Stripe", "TypeScript", "TailwindCSS"],
   },
 ];
