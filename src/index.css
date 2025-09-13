@@ -48,7 +48,7 @@ body {
 }
 /* Enhanced Typography */
 .secondary-title {
-  @apply text-3xl font-bold relative;
+  @apply text-4xl font-bold relative;
   background: linear-gradient(135deg, #ffffff 0%, #a3a3ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -57,7 +57,7 @@ body {
 
 .secondary-title::before {
   content: "";
-  @apply block w-12 h-2 rounded-full mb-1;
+  @apply block w-20 h-3 mb-1;
   background: var(--gradient-primary);
   animation: pulse-glow 2s ease-in-out infinite alternate;
 }
@@ -78,21 +78,21 @@ body {
 .nav-dot {
   transition: background 200ms, border-color 200ms;
 }
-/* .selected-circle {
-    @apply border-theme bg-theme;
-} */
+.selected-circle {
+    @apply border-blue-500 bg-black/50;
+}
 .nav-dot:hover span {
   opacity: 1;
 }
 [id] {
   scroll-margin-top: 100px;
 }
-/* .section-paragraph {
-    @apply text-secondary my-6 w-full max-w-3xl;
+.section-paragraph {
+    @apply text-stone-500 my-6 w-full max-w-3xl;
 }
 .badge{
-    @apply px-4 py-2 text-sm rounded bg-badge;
-} */
+    @apply px-4 py-2 text-sm rounded bg-blue-200;
+}
 .h-screen-partial {
   height: 80vh;
 }
