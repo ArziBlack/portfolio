@@ -1,39 +1,65 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+import { SECTIONS, SECTION_IDS } from "@/lib/site";
+import { useScrollSpy } from "@/hooks/useScrollSpy";
 
-interface NavigationDotsProps {
-  updateList: () => void;
-}
-
-const NavigationDots: React.FC<NavigationDotsProps> = ({ updateList }) => {
-  // The updateList function is passed as a prop, so it's not defined here.
-  // It will be called from the parent component (Hero.tsx) via a useEffect or similar.
+/**
+ * The floating side navigation, kept from the original layout but squared off:
+ * each marker is a hard block that stretches into a bar when its section is active.
+ */
+const NavigationDots: React.FC = () => {
+  const active = useScrollSpy(SECTION_IDS);
 
   return (
-    <nav className='inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block'>
-      <motion.div
-        className="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36 z-20"
-        initial={{ y: -250, opacity: 0, scale: 0.5 }}
-        whileInView={{ y: 0, opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
+    <nav
+      aria-label="Section navigation"
+      className="fixed top-1/2 left-6 z-40 hidden -translate-y-1/2 xl:block 2xl:left-10"
+    >
+      <motion.ul
+        className="space-y-5"
+        initial={{ x: -40, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
       >
-        <a href='#home' className="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
-          <span className='bg-body px-2 py-1 rounded-md ml-10 opacity-0'>Home</span>
-        </a>
-        <a href='#work' className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-          <span className='bg-black px-2 py-1 rounded-md ml-10 opacity-0'>Work</span>
-        </a>
-        <a href='#flow' className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-          <span className='bg-black px-2 py-1 rounded-md ml-10 opacity-0'>Flow</span>
-        </a>
-        <a href='#clients' className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-          <span className='bg-black px-2 py-1 rounded-md ml-10 opacity-0'>Client</span>
-        </a>
-        <a href='#hire' className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-          <span className='bg-black px-2 py-1 rounded-md ml-10 opacity-0'>Hire</span>
-        </a>
-      </motion.div>
+        {SECTIONS.map(({ id, label, index }) => {
+          const isActive = active === id;
+          return (
+            <li key={id}>
+              <a
+                href={`#${id}`}
+                aria-current={isActive ? "true" : undefined}
+                className="nav-dot group flex items-center gap-4"
+              >
+                <span
+                  className={cn(
+                    "block h-[3px] rounded-none transition-all duration-300",
+                    isActive
+                      ? "w-10 bg-blue-500"
+                      : "w-5 bg-white/25 group-hover:w-8 group-hover:bg-white/60"
+                  )}
+                />
+                <span
+                  className={cn(
+                    "flex items-baseline gap-2 text-[10px] font-semibold tracking-[0.3em] uppercase transition-all duration-300",
+                    isActive
+                      ? "translate-x-0 text-white opacity-100"
+                      : "-translate-x-2 text-white/50 opacity-0 group-hover:translate-x-0 group-hover:opacity-100"
+                  )}
+                >
+                  <span className="text-blue-400">{index}</span>
+                  {label}
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </motion.ul>
+
+      <span
+        aria-hidden="true"
+        className="mt-8 ml-1 block h-24 w-px bg-gradient-to-b from-white/25 to-transparent"
+      />
     </nav>
   );
 };
