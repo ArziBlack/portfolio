@@ -89,7 +89,7 @@ const About: React.FC = () => {
                 {STACK.map((item) => (
                   <span
                     key={item}
-                    className="border border-white/12 px-3 py-2 text-[10px] font-semibold tracking-[0.18em] text-white/70 uppercase transition-colors duration-200 hover:border-blue-500 hover:text-white"
+                    className="border border-white/10 px-3 py-2 text-[10px] font-semibold tracking-[0.18em] text-white/70 uppercase transition-colors duration-200 hover:border-blue-500 hover:text-white"
                   >
                     {item}
                   </span>

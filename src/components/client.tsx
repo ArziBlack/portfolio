@@ -1,5 +1,6 @@
 "use client";
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
+import { SectionHeading } from "./Decor";
 
 export function ClientDemo() {
   const images = [
@@ -28,17 +29,40 @@ export function ClientDemo() {
     "/Img/fanful.jpg",
     "/Img/fanful1.png",
     "/Img/tensfer.png",
-    "/Img/chapta.jpeg",
-    "/Img/chapta.jpeg",
-    "/Img/chapta.jpeg",
-    "/Img/chapta.jpeg",
-    "/Img/chapta.jpeg",
-    "/Img/chapta.jpeg",
-    "/Img/chapta.jpeg",
+    "/Img/tensfer_login.png",
+    "/Img/feasibility.png",
+    "/Img/work/Dashboard.jpg",
+    "/Img/work/Landing-page.jpg",
+    "/Img/work/Responsive-mobile-application.jpg",
+    "/Img/work/admin_fudlist.jpg",
+    "/Img/work/basetrader.png",
   ];
+
   return (
-    <div className="mx-auto my-2 max-w-7xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800">
-      <ThreeDMarquee images={images} />
-    </div>
+    <section id="gallery" className="section bg-white/[0.02]">
+      <div className="shell">
+        <SectionHeading
+          eyebrow="Screens & shipped work"
+          title="The"
+          markedWord="Gallery"
+        />
+        <p className="section-paragraph">
+          Interfaces, dashboards and app screens pulled straight from the
+          projects above.
+        </p>
+
+        <div className="relative mt-12 border border-white/10 bg-[#08080c] p-2">
+          <span
+            aria-hidden="true"
+            className="absolute -top-2 -left-2 h-5 w-5 border-t-2 border-l-2 border-blue-500"
+          />
+          <span
+            aria-hidden="true"
+            className="absolute -right-2 -bottom-2 h-5 w-5 border-r-2 border-b-2 border-blue-500"
+          />
+          <ThreeDMarquee images={images} />
+        </div>
+      </div>
+    </section>
   );
 }
