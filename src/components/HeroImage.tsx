@@ -13,7 +13,8 @@ const HeroImage: React.FC = () => {
       <div className="relative overflow-hidden border border-white/10">
         <img
           src={heroImg}
-          alt={`Portrait of Milton Black`}
+          alt="Portrait of Milton Black"
+          decoding="async"
           className="duotone h-[340px] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03] sm:h-[440px] lg:h-[560px]"
         />
         <div

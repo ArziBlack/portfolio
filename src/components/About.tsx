@@ -48,6 +48,8 @@ const About: React.FC = () => {
               <img
                 src={aboutImg}
                 alt={`${PROFILE.name} at work`}
+                loading="lazy"
+                decoding="async"
                 className="duotone h-[420px] w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
