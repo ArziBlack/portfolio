@@ -2,7 +2,61 @@ export type WorkCategory =
   | "Web App"
   | "Dashboard"
   | "Mobile"
-  | "Backend";
+  | "Backend"
+  | "Engineering";
+
+const RECENT_WORK: WorkData[] = [
+  {
+    id: "micro1",
+    imageSrc: "/Img/micro1.png",
+    title: "Micro1",
+    description:
+      "Worked as Senior FreeCAD Engineer, leading end-to-end parametric modeling projects — constrained sketches, model trees and reusable BIM components — plus IFC import/export and validation for AI training data pipelines.",
+    badges: ["FreeCAD", "BIM", "IFC"],
+    category: "Engineering",
+    year: "2026",
+  },
+  {
+    id: "afara",
+    imageSrc: "/Img/afara_main.jpg",
+    title: "Afara",
+    description:
+      "A payment gateway service web app — built as a Next.js CMS with a clean, fast interface across the core payment flows.",
+    badges: ["Next.js", "TypeScript", "TailwindCSS"],
+    category: "Web App",
+    year: "2025",
+  },
+  {
+    id: "zirro",
+    imageSrc: "/Img/zirro.jpg",
+    title: "Zirro",
+    description:
+      "Zirro.co is an all-in-one business management platform for ecommerce, bookings, hotel and retail. Built a full CMS across frontend and backend with TypeScript and Go, and revamped the landing page.",
+    badges: ["TypeScript", "Go", "CMS"],
+    category: "Dashboard",
+    year: "2026",
+  },
+  {
+    id: "weddn",
+    imageSrc: "/Img/weddn.jpg",
+    title: "Weddn",
+    description:
+      "Weddn.co is a wedding planning platform for couples, planners and guests. Enhanced the dashboard UI, built a secure authentication flow with TypeScript and Go, and shipped bulk-invitation messaging.",
+    badges: ["TypeScript", "Go"],
+    category: "Web App",
+    year: "2025",
+  },
+  {
+    id: "yoris",
+    imageSrc: "/Img/yoris_main.jpg",
+    title: "Yoris",
+    description:
+      "A logistics service app handling international shipping from China to Africa — built as a Next.js CMS covering the core shipment and tracking flows.",
+    badges: ["Next.js", "TypeScript", "TailwindCSS"],
+    category: "Web App",
+    year: "2025",
+  },
+];
 
 export interface WorkData {
   id: string;
@@ -16,6 +70,7 @@ export interface WorkData {
 }
 
 export const myWorkData: WorkData[] = [
+  ...RECENT_WORK,
   {
     id: "1",
     imageSrc: "/Img/fudlist.png",
@@ -61,9 +116,9 @@ export const myWorkData: WorkData[] = [
     imageSrc: "/Img/feasibility.png",
     title: "Feasibility Giant",
     description:
-      "A scalable e-commerce solution with a focus on user experience and a fast, accessible storefront.",
-    badges: ["Next.js", "Stripe", "TypeScript", "TailwindCSS"],
-    category: "Web App",
+      "Built admin controllers, endpoints and an SDK for the application and dashboard, and created 3D pipe models and workflows in FreeCAD for an oil and gas spill quantification application.",
+    badges: ["Node.js", "FreeCAD", "TypeScript"],
+    category: "Backend",
     year: "2024",
   },
   {
@@ -71,8 +126,8 @@ export const myWorkData: WorkData[] = [
     imageSrc: "/Img/chapta.jpeg",
     title: "Chapta",
     description:
-      "Chapta is an edtech startup helping low-to-mid tier African schools digitize operations using simple, familiar tools like Google Sheets, WhatsApp, SMS, and AI.",
-    badges: ["Next.js", "TypeScript", "TailwindCSS"],
+      "Chapta is an edtech startup helping low-to-mid tier African schools digitize operations using simple, familiar tools like Google Sheets, WhatsApp, SMS, and AI. Built with Node.js, Mongoose and JWT authentication, with AI-driven student performance suggestions and analytics dashboards.",
+    badges: ["Node.js", "Mongoose", "JWT"],
     category: "Web App",
     year: "2025",
   },
@@ -114,4 +169,5 @@ export const WORK_CATEGORIES: ("All" | WorkCategory)[] = [
   "Dashboard",
   "Mobile",
   "Backend",
+  "Engineering",
 ];

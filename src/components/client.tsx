@@ -4,6 +4,15 @@ import { SectionHeading } from "./Decor";
 
 export function ClientDemo() {
   const images = [
+    "/Img/micro1.png",
+    "/Img/afara_main.jpg",
+    "/Img/afara_dark.jpg",
+    "/Img/afara_purple.jpg",
+    "/Img/zirro.jpg",
+    "/Img/zirro_white.jpg",
+    "/Img/weddn.jpg",
+    "/Img/yoris.jpg",
+    "/Img/yoris_main.jpg",
     "/Img/chapta.jpeg",
     "/Img/commune.jpg",
     "/Img/hep.png",

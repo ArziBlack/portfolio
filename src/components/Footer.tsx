@@ -8,8 +8,12 @@ const Footer: React.FC = () => (
     <div className="shell grid gap-10 py-16 md:grid-cols-3">
       <div>
         <div className="flex items-center gap-3">
-          <span className="flex h-9 w-9 items-center justify-center bg-blue-500 font-display text-sm font-bold text-white">
-            M
+          <span className="flex h-9 w-9 items-center justify-center bg-white p-1.5">
+            <img
+              src="/brand/main_logo.svg"
+              alt={`${PROFILE.last} logo mark`}
+              className="h-full w-full object-contain"
+            />
           </span>
           <span className="font-display text-sm font-bold tracking-[0.24em] text-white uppercase">
             {PROFILE.last}
