@@ -27,18 +27,12 @@ const SiteHeader: React.FC = () => {
       )}
     >
       <div className="shell flex h-20 items-center justify-between">
-        <a href="#home" className="group flex items-center gap-3">
-          <span className="flex h-9 w-9 items-center justify-center bg-white p-1.5">
-            <img
-              src="/brand/main_logo.svg"
-              alt={`${PROFILE.last} logo mark`}
-              className="h-full w-full object-contain"
-            />
-          </span>
-          <span className="font-display text-sm font-bold tracking-[0.24em] text-white uppercase">
-            {PROFILE.last}
-            <span className="text-blue-500">.</span>
-          </span>
+        <a href="#home" className="flex items-center">
+          <img
+            src="/brand/main.png"
+            alt={PROFILE.name}
+            className="h-48 w-auto shrink-0 mix-blend-screen"
+          />
         </a>
 
         <nav className="hidden items-center gap-9 md:flex">
